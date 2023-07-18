@@ -2,7 +2,7 @@
     "name": "sample-e-commerce-api",
     "rewrites": [
         {
-            "source": "/api/(.*)",
+            "source": "/(.*)",
             "destination": "/api"
         }
     ]
