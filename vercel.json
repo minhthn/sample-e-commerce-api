@@ -1,5 +1,11 @@
 {
     "name": "sample-e-commerce-api",
+    "builds": [
+        {
+            "src": "src/app.js",
+            "use": "@vercel/node"
+        }
+    ],
     "rewrites": [
         {
             "source": "/(.*)",
