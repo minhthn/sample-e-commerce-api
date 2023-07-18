@@ -7,8 +7,7 @@
   "scripts": {
     "start": "node --experimental-specifier-resolution=node src/app.js",
     "dev:test-prod": "NODE_ENV=production nodemon --inspect --experimental-specifier-resolution=node src/app.js",
-    "dev": "nodemon --inspect --experimental-specifier-resolution=node src/app.js",
-    "vercel-build": "npm start"
+    "dev": "nodemon --inspect --experimental-specifier-resolution=node src/app.js"
   },
   "author": "minhnguyent546",
   "license": "ISC",
