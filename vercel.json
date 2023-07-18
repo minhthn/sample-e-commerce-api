@@ -1,0 +1,9 @@
+{
+    "name": "sample-e-commerce-api",
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "src/app.js"
+        }
+    ]
+}
