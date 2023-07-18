@@ -19,7 +19,7 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3030;
-const __dirname = getDirname(import.meta.url);
+// const __dirname = getDirname(import.meta.url);
 
 // middleware
 app.use(express.json());

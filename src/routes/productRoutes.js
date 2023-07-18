@@ -12,7 +12,7 @@ import {
 import { getDirname } from '../utils';
 
 const router = Router();
-const __dirname = getDirname(import.meta.url);
+// const __dirname = getDirname(import.meta.url);
 
 // multer
 const maxFileSize = 5 * 1024 * 1024; // 5 MiB
