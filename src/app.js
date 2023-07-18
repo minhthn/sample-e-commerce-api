@@ -29,19 +29,21 @@ app.use('/api/v1', express.static(path.join(__dirname, '..', 'public')));
 app.use(cors());
 app.use(helmet());
 app.use(cookieParser(process.env.COOKIES_SECRET));
-if (app.get('env') === 'production') {
-    const rfs = Rfs.createStream(process.env.LOG_FILE || 'log.txt', {
-        size: process.env.LOG_SIZE || '10M',
-        interval: process.env.LOG_INTERVAL || '1d',
-        compress: 'gzip',
-        path: process.env.LOG_PATH || './logs',
-    });
-    app.use(morgan(process.env.LOG_FORMAT || 'dev', {
-        stream: rfs,
-    }));
-} else {
-    app.use(morgan('dev'));
-}
+// if (app.get('env') === 'production') {
+//     console.log(">> Rfs:", Rfs);
+//     const rfs = Rfs.createStream(process.env.LOG_FILE || 'log.txt', {
+//         size: process.env.LOG_SIZE || '10M',
+//         interval: process.env.LOG_INTERVAL || '1d',
+//         compress: 'gzip',
+//         path: process.env.LOG_PATH || './logs',
+//     });
+//     app.use(morgan(process.env.LOG_FORMAT || 'dev', {
+//         stream: rfs,
+//     }));
+// } else {
+//     app.use(morgan('dev'));
+// }
+app.use(morgan('dev'));
 app.use(mongoSanitize({
     allowDots: true,
     replaceWith: '_',
