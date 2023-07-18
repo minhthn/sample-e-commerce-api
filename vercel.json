@@ -1,9 +1,9 @@
 {
     "name": "sample-e-commerce-api",
-    "routes": [
+    "rewrites": [
         {
-            "src": "/(.*)",
-            "dest": "src/app.js"
+            "source": "/api/(.*)",
+            "destination": "/api"
         }
     ]
 }
