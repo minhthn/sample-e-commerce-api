@@ -4,10 +4,7 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "dev:test-prod": "NODE_ENV=production nodemon --inspect --experimental-specifier-resolution=node src/app.js",
-    "dev": "nodemon --inspect --experimental-specifier-resolution=node src/app.js",
-    "build": "babel src/ -d dist/",
-    "start": "npm run build && node dist/app.js"
+
   },
   "author": "minhnguyent546",
   "license": "ISC",
