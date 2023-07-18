@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Ysabeau+Office:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none !important;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+.content-box {
+    width: 540px;
+    border: 4px;
+    padding: 2rem;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content-box__heading {
+    font-size: 1.6rem;
+}
+
+.content-box__avatar {
+    margin-top: 1rem;
+}
+
+.content-box__avatar-wrapper {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+}
+
+.content-box__avatar-link {
+    display: block;
+    height: 100%;
+}
+
+.content_box__avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.content-box__description {
+    font-size: 1.1rem;
+    margin-top: 0.4rem;
+}
+
+.content-box__author {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    opacity: 0.8;
+}
+
+.content_box__author-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content_box__author-link:hover {
+    text-decoration: underline;
+}
+
+.documents {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.documents-button {
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    background-color: #9932cc;
+    color: #fff;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+
+.documents-button:hover {
+    opacity: 0.8;
+}

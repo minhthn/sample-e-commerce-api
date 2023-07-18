@@ -76,7 +76,7 @@ const start = async () => {
     try {
         await connectDB(process.env.MONGO_URI);
         app.listen(port, () => {
-            console.log(`Server is running at http://localhost:${port}`);
+            console.log(`Server is running on port ${port}`);
         });
     } catch (err) {
         throw err;
